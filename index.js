@@ -29,3 +29,12 @@ modal.addEventListener("click", function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 });
+
+document.addEventListener("keydown", function (e) {
+  // e.preventDefault();
+  if (e.key == "Escape") {
+    // closeModal.focus();
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }
+});
